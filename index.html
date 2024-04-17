@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container--form" id="formLog">
+            <input class="userData" type="text" name="" id="user" placeholder="Usuário">
+            <input class="userData" type="password" name="" id="password" placeholder="Senha">
+            <button class="btnUserData" onclick="logar()">Entrar</button>
+            <button class="btnUserData" id="acessaCadastro" onclick="mudaForm()">Não sou cadastrado</button>
+        </div>
+        <div class="container--form deactivaded" id="formCad">
+            <input class="userData" type="text" name="" id="userCad" placeholder="Cadastre um nome de usuário">
+            <input class="userData" type="password" name="" id="passwordCad" placeholder="Cadastre sua senha">
+            <input class="userData" type="password" name="" id="passwordConfirm" placeholder="Confirme sua senha">
+            <button class="btnUserData" onclick="cadastraUsuario()">Cadastrar</button>
+            <button class="btnUserData" id="acessaLogin" onclick="mudaForm()">Voltar para o login</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./script/login.js"></script>
+    <script src="./script/cadastros.js"></script>
+    <script src="./script/dados.js"></script>
+</body>
+</html>
